@@ -1,0 +1,2 @@
+var e=function(n){Array.from(n.childNodes).forEach(function(n){if(3===n.nodeType){var t=n.nodeValue.trim();if(t){var a=document.createElement("span"),o=n.parentNode;a.textContent=t,o.replaceChild(a,n);var d=a.nextElementSibling;d&&a.addEventListener("click",function(e){"none"!==d.style.display?d.style.display="none":"block"!==d.style.display&&(d.style.display="block")})}}else 1===n.nodeType&&("LI"===n.tagName?e(n):"UL"===n.tagName&&e(n))})};document.addEventListener("DOMContentLoaded",function(){e(document.querySelector(".tree"))});
+//# sourceMappingURL=index.28550594.js.map
